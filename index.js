@@ -1,3 +1,5 @@
+#!/usr/bin/env nodejs
+
 /*! (c) Andrea Giammarchi - ISC License */
 
 const zuluFrequency = 300;
@@ -62,4 +64,4 @@ require('http').createServer((req, res) => {
     'X-Zulu-Time': now
   });
   res.end(content);
-}).listen(process.env.PORT || 3000);
+}).listen(process.env.PORT || 8080);
